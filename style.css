@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+.spinning-wheel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 200vmax;
+    height: 200vmax;
+    transform: translate(-50%, -50%);
+    background: conic-gradient(
+            #F1D302 0deg, #F1D302 22.5deg, #89AAE6 22.5deg, #89AAE6 45deg,
+            #F1D302 45deg, #F1D302 67.5deg, #89AAE6 67.5deg, #89AAE6 90deg,
+            #F1D302 90deg, #F1D302 112.5deg, #89AAE6 112.5deg, #89AAE6 135deg,
+            #F1D302 135deg, #F1D302 157.5deg, #89AAE6 157.5deg, #89AAE6 180deg,
+            #F1D302 180deg, #F1D302 202.5deg, #89AAE6 202.5deg, #89AAE6 225deg,
+            #F1D302 225deg, #F1D302 247.5deg, #89AAE6 247.5deg, #89AAE6 270deg,
+            #F1D302 270deg, #F1D302 292.5deg, #89AAE6 292.5deg, #89AAE6 315deg,
+            #F1D302 315deg, #F1D302 337.5deg, #89AAE6 337.5deg, #89AAE6 360deg
+    );
+    border-radius: 50%;
+    animation: spin 7s linear infinite;
+    z-index: 0;
+}
+
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+main {
+    background: transparent;
+    position: relative; /* Stays above the spinning wheel */
+    z-index: 1; /* Make sure it's above the wheel */
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    top: 46%;
+    transform: translateY(-50%);
+}
+
+.title {
+    font-size: 50px;
+    font-family: 'Matemasie', cursive;
+    text-align: center;
+    color: red;
+}
+
+.title a {
+    color: forestgreen;
+}
+
+main a {
+    color: mediumpurple;
+    text-decoration: none;
+}
+
+
+.separator {
+    position: relative;
+    top: 46%;
+    transform: translateY(-50%);
+}
+
+info {
+    text-align: center;
+    font-size: 22px;
+    font-family: "Ubuntu Mono", monospace;
+    font-style: italic;
+}
