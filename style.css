@@ -68,6 +68,7 @@ main {
 main a {
     color: mediumpurple;
     text-decoration: none;
+    font-style: italic;
 }
 
 
@@ -81,5 +82,4 @@ info {
     text-align: center;
     font-size: 22px;
     font-family: "Ubuntu Mono", monospace;
-    font-style: italic;
 }
