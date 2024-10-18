@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>À Propos</title>
+    <link rel="stylesheet" href="../CSS/About/about.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <!-- Header -->
-    <Section>
+    <Section id="header">
         <!-- "Go Back" button -->
-        <div>
-            <a href="../../index.html"></a>
+        <div id="backButton">
+            <a href="../../index.html">
                 <img src="Assets/Images/Icons/backArrow.png" alt="Icone de retour en arrière">
             </a>
 
@@ -24,74 +26,87 @@
     </Section>
 
     <!-- Description du projet -->
-    <Section>
-        <h2>Description</h1>
+    <Section id="description">
+        <h2>Description</h2>
         <p></p>
         
         <!-- Separator -->
-        <div></div>
+        <div id="separator"></div>
 
         <!-- Liens -->
         <div>
-            <a href="https://github.com/PlatonNeutron/GuessTheCar"></a>
+            <a href="https://github.com/PlatonNeutron/GuessTheCar">
                 <img src="Assets/Images/Icons/backArrow.png" alt="Icone de retour en arrière">
             </a>
 
-            <a href="https://www.figma.com/design/sqg7aftRrhRN4s6iab7V92/Maquette-%22GuessTheCar%22?node-id=35-37&t=DVjW82xvJLNYH9fz-1"></a>
+            <a href="https://www.figma.com/design/sqg7aftRrhRN4s6iab7V92/Maquette-%22GuessTheCar%22?node-id=35-37&t=DVjW82xvJLNYH9fz-1">
                 <img src="Assets/Images/Icons/backArrow.png" alt="Icone de retour en arrière">
             </a>
         </div>
     </Section>
 
     <!-- L'équipe -->
-    <Section>
+    <Section id="équipe">
         <h2>L'Équipe</h2>
 
-        <!-- Membre 1 -->
-        <div>
-            <img src="../Images/PdP/PlatonNeutron.webp" alt="Photo de profil de Platon_Neutron">
-            <p>Platon Neutron</p>
-            <p>Product Owner</p>
-            
-            <div>
-                <div>
-                    <img src="../Images/Logos/HTML5.png" alt="Logo de HTML5">
-                    <p>HTML5</p>
+        <div id="cards">
+            <!-- Membre 1 -->
+            <div class="Card">
+                <div class="Infos">
+                    <img src="../Images/PdP/PlatonNeutron.png" alt="Photo de profil de Platon_Neutron" class="PdP">
+
+                    <div class="MemberTxtInfos">
+                        <p>Platon Neutron</p>
+                        <p>Product Owner</p>
+                    </div>
                 </div>
+                
+                <div class="SkillsGroups">
+                    <div class="Skills">
+                        <img src="../Images/Logos/HTML5.png" alt="Logo de HTML5">
+                        <p>HTML5</p>
+                    </div>
 
-                <div>
-                    <img src="../Images/Logos/css3.webp" alt="Logo de CSS3">
-                    <p>CSS3</p>
-                </div>
-            </div>
+                    <div class="Skills">
+                        <img src="../Images/Logos/css3.webp" alt="Logo de CSS3">
+                        <p>CSS3</p>
+                    </div>
 
-            <!-- Mail -->
-        </div>
-
-        <!-- Membre 2 -->
-        <div>
-            <img src="../Images/PdP/Able.webp" alt="Photo de profil de Able">
-            <p>Able</p>
-            <p>Scrum Manager</p>
-            
-            <div>
-                <div>
-                    <img src="../Images/Logos/HTML5.png" alt="Logo de HTML5">
-                    <p>HTML5</p>
-                </div>
-
-                <div>
-                    <img src="../Images/Logos/css3.webp" alt="Logo de CSS3">
-                    <p>CSS3</p>
+                    <!-- Mail -->
                 </div>
             </div>
 
-            <!-- Mail -->
+            <!-- Membre 2 -->
+            <div class="Card">
+                <div class="Infos">
+                    <img src="../Images/PdP/Able.png" alt="Photo de profil de Able" class="PdP">
+
+                    <div class="MemberTxtInfos">
+                        <p>Able</p>
+                        <p>Scrum Manager</p>
+                    </div>
+                </div>
+                
+                
+                <div class="SkillsGroups">
+                    <div class="Skills">
+                        <img src="../Images/Logos/HTML5.png" alt="Logo de HTML5">
+                        <p>HTML5</p>
+                    </div>
+
+                    <div class="Skills">
+                        <img src="../Images/Logos/css3.webp" alt="Logo de CSS3">
+                        <p>CSS3</p>
+                    </div>
+
+                    <!-- Mail -->
+                </div>
+            </div>
         </div>
     </Section>
 
     <!-- Les tâches -->
-    <Section>
+    <Section id="tâches">
         <h2>Tâches</h2>
         
         <table>
@@ -105,9 +120,14 @@
 
             <tbody>
                 <tr>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
+                    <td>Design de la Maquette</td>
+                    <td>Platon</td>
+                    <td>3h</td>
+                </tr>
+                <tr>
+                    <td>Developpement de la page "À Propos"</td>
+                    <td>Platon</td>
+                    <td>3h</td>
                 </tr>
             </tbody>
         </table>

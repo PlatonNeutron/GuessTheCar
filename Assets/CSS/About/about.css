@@ -1,0 +1,207 @@
+@font-face {
+    font-family: Knewave;
+    src: url(../../Fonts/Knewave-Regular.ttf);
+}
+
+@font-face {
+    font-family: McLaren;
+    src: url(../../Fonts/McLaren-Regular.ttf);
+}
+
+/* ========================================================================================================================================================= */
+
+/* =========================================================================================================================== */
+/* Général */
+/* =========================================================================================================================== */
+
+body {
+    background-color: #600101;
+}
+
+h1, h2, h3 {
+    font-family: Knewave;
+    color: #F9E6E6;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+p {
+    font-family: McLaren;
+    color: #F9E6E6;
+}
+
+
+/* ==================================================================================== */
+/* Sections */
+/* ==================================================================================== */
+
+#description, #équipe, #tâches {
+    background-color: #872222;
+    padding-bottom: 3ch;
+    margin-bottom: 6ch;
+    margin-left: 2ch;
+    margin-right: 2ch;
+    border-radius: 2ch;
+    box-shadow: 1ch 1ch 1ch rgba(0, 0, 0, 0.5), -1ch -1ch 1ch rgba(170 53 53);
+}
+
+
+/* =========================================================================================================================== */
+/* Header */
+/* =========================================================================================================================== */
+
+#header {
+    display: flex;
+}
+
+header h1 {
+    text-align: center;
+}
+
+#backButton {
+    display: flex;
+}
+
+
+/* =========================================================================================================================== */
+/* Description */
+/* =========================================================================================================================== */
+
+#description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#separator {
+    background-color: #F9E6E6;
+    height: 1ch;
+    width: 80ch;
+    border-radius: 1ch;
+}
+
+
+/* =========================================================================================================================== */
+/* L'équipe */
+/* =========================================================================================================================== */
+
+#équipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* ==================================================================================== */
+/* Cards */
+/* ==================================================================================== */
+
+#cards {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.Card {
+    background-color: #DAA3A3;
+    width: 85ch;
+    position: relative;
+    border-radius: 5ch;
+}
+
+.Card p {
+    color: #600101;
+}
+
+
+/* ================================================================ */
+/* Infos */
+/* ================================================================ */
+
+.Infos {
+    display: flex;
+}
+
+.PdP {
+    width: auto;
+    height: 30ch;
+    margin: 3.5ch;
+    border-radius: 20ch;
+}
+
+.MemberTxtInfos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.MemberTxtInfos p:nth-child(odd) {
+    font-family: Knewave;
+    font-size: 3em;
+    margin-bottom: 0;
+    margin-right: 1ch;
+}
+
+.MemberTxtInfos p:nth-child(even) {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+
+/* ================================================================ */
+/* Skills */
+/* ================================================================ */
+
+.SkillsGroups {
+    display: flex;
+    position: absolute;
+    top: 23ch;
+    right: 5ch;
+}
+
+.SkillsGroups div:nth-child(1) {
+    margin-right: 2ch;
+}
+
+.Skills {
+    display: flex;
+    background-color: #D9D9D9;
+    padding-top: 1ch;
+    padding-left: 1.5ch;
+    padding-right: 1.5ch;
+    padding-bottom: 1ch;
+    border-radius: 5ch;
+}
+
+.Skills img {
+    height: 6ch;
+    width: auto;
+}
+
+.Skills p {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+/* =========================================================================================================================== */
+/* Tâches */
+/* =========================================================================================================================== */
+
+#tâches {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    width: 95%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid;
+}
