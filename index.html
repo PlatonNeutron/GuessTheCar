@@ -7,15 +7,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="spinning-wheel"></div>
 
+<div class="curtain">
+    <div class="curtain__wrapper">
+        <input type="checkbox" class="curtain__trigger" checked>
 
-<main>
-    <div class="uselesspieceofshit"></div>
-    <div class="title">
-        <h1><a href="about">à propos</a></h1>
+        <div class="curtain__panel curtain__panel--left">
+            <img src="images/left_curtain.png" height="100%" width="100%"/>
+        </div>
+
+        <div class="curtain__panel curtain__panel--right">
+            <img src="images/right_curtain.png" height="100%" width="100%"/>
+        </div>
     </div>
-</main>
+
+    <div class="spinning-wheel"></div>
+    <main>
+        <div class="uselesspieceofshit"></div>
+        <div class="title">
+            <h1><a href="about">à propos</a></h1>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const checkbox = document.querySelector('.curtain__trigger');
+            const curtainWrapper = document.querySelector('.curtain');
+
+            checkbox.addEventListener('change', function() {
+                if (checkbox.checked) {
+                    // Ajoute un délai pour attendre l'animation des rideaux avant de les retirer
+                    setTimeout(() => {
+                        curtainWrapper.style.display = 'none';  // Cache complètement les rideaux et la checkbox
+                    }, 1000);  // Attends la durée de l'animation des rideaux (1 seconde)
+                }
+            });
+        });
+    </script>
+
+</div>
+
+
 
 </body>
 </html>
