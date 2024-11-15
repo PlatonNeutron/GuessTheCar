@@ -21,25 +21,29 @@
         </div>
     </div>
 
-    <div class="spinning-wheel"></div>
+
     <main>
         <div class="uselesspieceofshit"></div>
         <div class="title">
-            <h1><a href="about">à propos</a></h1>
+            <img id="logotitle" src="/images/superbent.png" width="1000">
+            <div class="info">
+                <h1><a href="about">🛈</a></h1>
+            </div>
         </div>
+
     </main>
+    <div class="spinning-wheel"></div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const checkbox = document.querySelector('.curtain__trigger');
-            const curtainWrapper = document.querySelector('.curtain');
+            const curtainWrapper = document.querySelector('.curtain__wrapper');
 
             checkbox.addEventListener('change', function() {
-                if (checkbox.checked) {
-                    // Ajoute un délai pour attendre l'animation des rideaux avant de les retirer
+                if (!checkbox.checked) {
                     setTimeout(() => {
-                        curtainWrapper.style.display = 'none';  // Cache complètement les rideaux et la checkbox
-                    }, 1000);  // Attends la durée de l'animation des rideaux (1 seconde)
+                        curtainWrapper.style.display = 'none';
+                    }, 1000);
                 }
             });
         });
