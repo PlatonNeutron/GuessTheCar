@@ -19,14 +19,14 @@ html, body {
     height: 200vmax;
     transform: translate(-50%, -50%);
     background: conic-gradient(
-            #F1D302 0deg, #F1D302 22.5deg, #89AAE6 22.5deg, #89AAE6 45deg,
-            #F1D302 45deg, #F1D302 67.5deg, #89AAE6 67.5deg, #89AAE6 90deg,
-            #F1D302 90deg, #F1D302 112.5deg, #89AAE6 112.5deg, #89AAE6 135deg,
-            #F1D302 135deg, #F1D302 157.5deg, #89AAE6 157.5deg, #89AAE6 180deg,
-            #F1D302 180deg, #F1D302 202.5deg, #89AAE6 202.5deg, #89AAE6 225deg,
-            #F1D302 225deg, #F1D302 247.5deg, #89AAE6 247.5deg, #89AAE6 270deg,
-            #F1D302 270deg, #F1D302 292.5deg, #89AAE6 292.5deg, #89AAE6 315deg,
-            #F1D302 315deg, #F1D302 337.5deg, #89AAE6 337.5deg, #89AAE6 360deg
+            #F1D302 0deg, #F1D302 22.5deg, #db5757 22.5deg, #db5757 45deg,
+            #F1D302 45deg, #F1D302 67.5deg, #db5757 67.5deg, #db5757 90deg,
+            #F1D302 90deg, #F1D302 112.5deg, #db5757 112.5deg, #db5757 135deg,
+            #F1D302 135deg, #F1D302 157.5deg, #db5757 157.5deg, #db5757 180deg,
+            #F1D302 180deg, #F1D302 202.5deg, #db5757 202.5deg, #db5757 225deg,
+            #F1D302 225deg, #F1D302 247.5deg, #db5757 247.5deg, #db5757 270deg,
+            #F1D302 270deg, #F1D302 292.5deg, #db5757 292.5deg, #db5757 315deg,
+            #F1D302 315deg, #F1D302 337.5deg, #db5757 337.5deg, #db5757 360deg
     );
     border-radius: 50%;
     animation: spin 7s linear infinite;
@@ -55,20 +55,30 @@ main {
 }
 
 .title {
-    font-size: 50px;
-    font-family: 'Matemasie', cursive;
-    text-align: center;
-    color: red;
+    margin: 0;
 }
 
-.title a {
-    color: forestgreen;
+.title img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(0, -150px);
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+}
+
+.info h1 {
+    font-size: 90px;
+    transform: translate(0, 60px);
 }
 
 main a {
-    color: mediumpurple;
     text-decoration: none;
-    font-style: italic;
+    color: white;
+    -webkit-text-stroke: 3px black;
 }
 
 
