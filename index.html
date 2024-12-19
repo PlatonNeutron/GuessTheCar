@@ -3,19 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bicolor Spinning Wheel</title>
+    <title>Guess The car</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="spinning-wheel"></div>
 
+<div class="curtain">
+    <div class="curtain__wrapper">
+        <input type="checkbox" class="curtain__trigger" checked>
 
-<main>
-    <div class="uselesspieceofshit"></div>
-    <div class="title">
-        <h1><a href="about">à propos</a></h1>
+        <div class="curtain__panel curtain__panel--left">
+            <img src="images/left_curtain.png" height="100%" width="100%"/>
+        </div>
+
+        <div class="curtain__panel curtain__panel--right">
+            <img src="images/right_curtain.png" height="100%" width="100%"/>
+        </div>
     </div>
-</main>
+
+
+    <main>
+        <div class="uselesspieceofshit"></div>
+        <div class="title">
+            <img id="logotitle" src="/images/superbent.png" width="1000">
+            <div class="info">
+                <h1><a href="about">🛈</a></h1>
+            </div>
+        </div>
+
+    </main>
+    <div class="spinning-wheel"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const checkbox = document.querySelector('.curtain__trigger');
+            const curtainWrapper = document.querySelector('.curtain__wrapper');
+
+            checkbox.addEventListener('change', function() {
+                if (!checkbox.checked) {
+                    setTimeout(() => {
+                        curtainWrapper.style.display = 'none';
+                    }, 1000);
+                }
+            });
+        });
+    </script>
+
+</div>
+
+
 
 </body>
 </html>
